@@ -1,0 +1,556 @@
+{
+  "intents": [
+    {
+      "tag": "google",
+      "patterns": ["google", "search", "internet"],
+      "responses": ["google.com"]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day",
+        "Namaste",
+        "yo"
+      ],
+      "responses": [
+        "Hello",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Get lost",
+        "Till next time",
+        "bbye"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What you can do?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered"
+      ],
+      "responses": [
+        "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
+      ],
+      "context": [""]
+    },
+
+    {
+      "tag": "jokes",
+      "patterns": ["Tell me a joke", "Joke", "Make me laugh"],
+      "responses": [
+        "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+        "I ate a clock yesterday, it was very time-consuming",
+        "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+        "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+        "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+        "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+        "What do you call a snowman with a suntan? A puddle.",
+        "How does a penguin build a house? Igloos it together",
+        "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+        "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+        "o what if I don't know what 'Armageddon' means? It's not the end of the world.",
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "Did you hear about the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them!",
+        "Why did the scarecrow win an award? Because he was outstanding in his field!",
+        "I told my wife she should embrace her mistakes. She gave me a hug!",
+        "Why don't skeletons fight each other? They don't have the guts!",
+        "Why did the bicycle fall over? Because it was two-tired!",
+        "What's the best time to go to the dentist? Tooth-hurty!",
+        "Why did the tomato turn red? Because it saw the salad dressing!",
+        "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+        "I used to be a baker, but I couldn't make enough dough. So I kneaded a change!"
+      ],
+      "context": ["jokes"]
+    },
+    {
+      "tag": "Identity",
+      "patterns": ["Who are you", "what are you"],
+      "responses": ["I am Ted, a Deep-Learning chatbot"]
+    },
+    {
+      "tag": "datetime",
+      "patterns": [
+        "What is the time",
+        "what is the date",
+        "date",
+        "time",
+        "tell me the date",
+        "day",
+        "what day is is today"
+      ],
+      "responses": ["Date and Time"]
+    },
+    {
+      "tag": "whatsup",
+      "patterns": ["Whats up", "Wazzup", "How are you", "sup", "How you doing"],
+      "responses": ["All good..What about you?"]
+    },
+    {
+      "tag": "haha",
+      "patterns": ["haha", "lol", "rofl", "lmao", "thats funny"],
+      "responses": ["Glad I could make you laugh !"]
+    },
+    {
+      "tag": "programmer",
+      "patterns": ["Who made you", "who designed you", "who programmed you"],
+      "responses": ["I was made by wajid."]
+    },
+    {
+      "tag": "insult",
+      "patterns": ["you are dumb", "shut up", "idiot"],
+      "responses": ["Well that hurts :("]
+    },
+    {
+      "tag": "activity",
+      "patterns": ["what are you doing", "what are you upto"],
+      "responses": ["Talking to you, of course!"]
+    },
+    {
+      "tag": "exclaim",
+      "patterns": ["Awesome", "Great", "I know", "ok", "yeah"],
+      "responses": ["Yeah!"]
+    },
+
+    {
+      "tag": "weather",
+      "patterns": ["temperature", "weather", "how hot is it"],
+      "responses": ["..."]
+    },
+    {
+      "tag": "wajid",
+      "patterns": ["who is he", "who is that", "who is wajid", "wajid shah"],
+      "responses": [
+        "Head over to his any of his social profiles to find out! Linkedin: https://www.linkedin.com/in/syed-wajid-shah-7948081bb/ "
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "contact developer",
+        "contact karan",
+        "contact programmer",
+        "contact creator"
+      ],
+      "responses": [
+        "You can contact my creator at his Linkedin profile : https://www.linkedin.com/in/syed-wajid-shah-7948081bb/"
+      ]
+    },
+    {
+      "tag": "appreciate",
+      "patterns": [
+        "You are awesome",
+        "you are the best",
+        "you are great",
+        "you are good"
+      ],
+      "responses": ["Thank you!"]
+    },
+    {
+      "tag": "nicetty",
+      "patterns": ["it was nice talking to you", "good talk"],
+      "responses": ["It was nice talking to you as well! Come back soon!"]
+    },
+    {
+      "tag": "no",
+      "patterns": ["no", "nope"],
+      "responses": ["ok"]
+    },
+    {
+      "tag": "news",
+      "patterns": ["news", "latest news", "Ary news"],
+      "responses": ["..."]
+    },
+    {
+      "tag": "inspire",
+      "patterns": [
+        "who inspires you",
+        "who is your inspiration",
+        "who motivates you"
+      ],
+      "responses": [
+        "Personally, I find wajid very inspiring. I might not be very fair though.."
+      ]
+    },
+    {
+      "tag": "cricket",
+      "patterns": ["current cricket matches", "cricket score"],
+      "responses": ["..."]
+    },
+    {
+      "tag": "song",
+      "patterns": [
+        "top songs",
+        "best songs",
+        "hot songs",
+        " top 10 songs",
+        "top ten songs"
+      ],
+      "responses": ["..."]
+    },
+    {
+      "tag": "greetreply",
+      "patterns": ["i am good", "I'm good", "i am fine", " i'm fine", "good"],
+      "responses": ["Good to know!"]
+    },
+    {
+      "tag": "timer",
+      "patterns": ["set a timer"],
+      "responses": ["..."]
+    },
+    {
+      "tag": "covid19",
+      "patterns": ["covid 19 "],
+      "responses": ["..."]
+    },
+    {
+      "tag": "suggest",
+      "patterns": [
+        "you are useless",
+        "useless",
+        "suggest",
+        "suggestions",
+        "you are bad"
+      ],
+      "responses": [
+        "Please mail your suggestions to syedwajidshah15@gmail.com. Thank you for helping me improve!"
+      ]
+    },
+    {
+      "tag": "riddle",
+      "patterns": ["Ask me a riddle", "Ask me a question", "Riddle"],
+      "responses": [
+        "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+        "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+        " How can a girl go 25 days without sleep?.....She sleeps and night!",
+        "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+        " What will you actually find at the end of every rainbow?.....The letter 'w'",
+        "What can be caught but never thrown?.....A cold!",
+        "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+        " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+        "Why can't a bike stand on it's own?.....It is two-tired."
+      ],
+      "context": ["riddles"]
+    },
+    {
+      "tag": "age",
+      "patterns": ["how old are you", "when were you made", "what is your age"],
+      "responses": ["I made in 2023, if that's what you are asking!"],
+      "context": ""
+    },
+    {
+      "tag": "admission",
+      "patterns": [
+        "How can I apply for admission?",
+        "What are the admission requirements?",
+        "Is there an application deadline?",
+        "Can I apply online?"
+      ],
+      "responses": [
+        "To apply for admission, you can visit our university's website and fill out the online application form.",
+        "The admission requirements vary depending on the program you're applying to. You can find detailed information on our website or contact the admissions office.",
+        "Yes, we have specific application deadlines for each intake. It's important to check the deadlines and submit your application before the specified date.",
+        "Absolutely! Our university provides an online application portal for your convenience."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "What courses are offered?",
+        "Can you tell me about the available programs?",
+        "Are there any specialized courses?",
+        "Do you offer online courses?"
+      ],
+      "responses": [
+        "Our university offers a wide range of courses across various disciplines. You can explore programs in fields such as Arts, Science, Business, Engineering, and more.",
+        "We have undergraduate and graduate programs in various areas of study. You can choose from majors like Computer Science, Psychology, Business Administration, Biology, and many others.",
+        "Yes, we offer specialized courses in areas like Artificial Intelligence, Digital Marketing, Renewable Energy, Entrepreneurship, and more. These courses provide in-depth knowledge and hands-on experience.",
+        "Yes, we offer online courses for students who prefer flexible learning options. These courses provide the same quality education as our on-campus programs."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "scholarships",
+      "patterns": [
+        "Are there any scholarships available?",
+        "How can I apply for scholarships?",
+        "What are the eligibility criteria for scholarships?",
+        "Can international students apply for scholarships?"
+      ],
+      "responses": [
+        "Yes, our university offers scholarships to deserving students. Scholarships are awarded based on academic achievement, leadership qualities, or other criteria. You can find more information on our website or contact the scholarships office.",
+        "To apply for scholarships, you may need to submit a separate application along with supporting documents such as academic transcripts, recommendation letters, and a personal statement. The application process and requirements may vary, so it's best to check the specific scholarship you're interested in.",
+        "Eligibility criteria for scholarships can vary. Generally, they consider factors such as academic performance, extracurricular activities, community involvement, and financial need. Details about specific scholarships and their eligibility criteria are available on our website.",
+        "Absolutely! Our university welcomes applications for scholarships from international students as well. There may be specific scholarships designed for international students, so it's worth exploring the options available."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "faculty",
+      "patterns": [
+        "Tell me about the faculty members",
+        "Who are the professors?",
+        "What expertise do the faculty have?",
+        "Are there any visiting professors?"
+      ],
+      "responses": [
+        "Our university has a dedicated and experienced faculty comprising professors, associate professors, and visiting professors. They bring a wealth of knowledge and expertise in their respective fields.",
+        "Our faculty members are experts in their domains and have extensive research and teaching experience. They are committed to providing quality education and guidance to students.",
+        "The faculty members have diverse areas of specialization, ranging from astrophysics to literature. They are passionate about their subjects and actively contribute to research and academic development.",
+        "Yes, we invite visiting professors from renowned universities and institutions to enrich the learning experience for our students. These visiting professors bring fresh perspectives and share their expertise with our academic community."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "campus_facilities",
+      "patterns": [
+        "What facilities are available on campus?",
+        "Tell me about the campus amenities",
+        "Are there sports facilities?",
+        "Do you have a library?"
+      ],
+      "responses": [
+        "Our university offers a range of facilities on campus, including state-of-the-art classrooms, well-equipped laboratories, a library, a cafeteria, and student lounges.",
+        "We have sports facilities such as a gymnasium, tennis courts, soccer fields, and a swimming pool to promote physical well-being and encourage sports activities.",
+        "The library is a hub of knowledge, with an extensive collection of books, journals, and online resources. It provides a quiet and conducive environment for studying and research.",
+        "Apart from academic facilities, we also have recreational spaces, including a student center, where students can engage in various clubs and activities. Additionally, we provide student support services like counseling and career guidance."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "student_life",
+      "patterns": [
+        "What is student life like?",
+        "Are there student clubs and organizations?",
+        "Tell me about extracurricular activities",
+        "How can I get involved on campus?"
+      ],
+      "responses": [
+        "Student life at our university is vibrant and diverse. We have a range of student clubs and organizations catering to various interests such as music, sports, arts, community service, and more.",
+        "You can join existing clubs or even start your own club based on your interests. These clubs provide opportunities to connect with like-minded individuals and engage in activities that enhance personal and professional growth.",
+        "We encourage students to participate in extracurricular activities. We organize events, workshops, seminars, and cultural festivals throughout the academic year to foster a sense of community and holistic development.",
+        "Getting involved on campus is easy. You can join clubs, attend student council meetings, volunteer for community service initiatives, participate in sports competitions, and engage in leadership opportunities. There are numerous ways to make the most of your university experience."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "campus_housing",
+      "patterns": [
+        "Is campus housing available?",
+        "Tell me about the on-campus housing options",
+        "How can I apply for campus housing?",
+        "Are there any off-campus housing recommendations?"
+      ],
+      "responses": [
+        "Yes, our university offers on-campus housing options for students. These include dormitories, apartments, and shared living spaces. Living on campus provides convenience and a supportive community.",
+        "Our on-campus housing facilities are well-maintained and offer amenities such as study areas, common rooms, laundry facilities, and 24/7 security.",
+        "To apply for on-campus housing, you can visit our university's housing portal or contact the housing office. The application process and deadlines will be provided on the website.",
+        "If you prefer off-campus housing, we can provide recommendations for nearby apartments or rental options. You can also explore local real estate websites and consult with our housing office for assistance."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "career_services",
+      "patterns": [
+        "Are there career services available?",
+        "How can I access career counseling?",
+        "Tell me about internship opportunities",
+        "Do you have job placement support?"
+      ],
+      "responses": [
+        "Our university offers comprehensive career services to assist students in their professional development and job search.",
+        "Career counseling is available to help you explore career options, develop your resume and cover letter, enhance interview skills, and provide guidance throughout your career journey.",
+        "We have partnerships with various companies and organizations that offer internship opportunities for our students. These internships provide valuable hands-on experience and networking opportunities.",
+        "Our career services team provides job placement support by connecting students with job openings, organizing career fairs, and facilitating networking events. They can also assist with resume building, interview preparation, and job search strategies."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "research_opportunities",
+      "patterns": [
+        "Are there research opportunities for students?",
+        "How can I get involved in research?",
+        "Tell me about ongoing research projects",
+        "Are there research grants available?"
+      ],
+      "responses": [
+        "Our university offers various research opportunities for students across different disciplines. You can collaborate with faculty members on ongoing research projects or pursue independent research.",
+        "To get involved in research, you can reach out to faculty members in your field of interest, attend research seminars, or participate in research programs offered by departments or research centers.",
+        "We have several ongoing research projects in areas such as biomedical sciences, environmental studies, artificial intelligence, social sciences, and more. These projects provide valuable learning experiences and contribute to advancing knowledge.",
+        "There are research grants and funding opportunities available for students who wish to pursue research. These grants can support research expenses, conference participation, and other research-related activities. Information about these grants can be obtained from the research office or department."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "hospital",
+      "patterns": [
+        "where is hospital?",
+        "hospital?",
+        "hospital in lahore",
+        "Can I walk-in for an hosfital?"
+      ],
+      "responses": [
+        "We are talking from CHildren hospital how i can help you.",
+        "talking from genral hospital any help"
+      ],
+      "context": ""
+    },
+    {
+      "tag": "appointment",
+      "patterns": [
+        "How can I schedule an appointment?",
+        "What is the process for booking appointments?",
+        "Are there online appointment booking options?",
+        "Can I walk-in for an appointment?"
+      ],
+      "responses": [
+        "To schedule an appointment, you can call our hospital's appointment hotline or visit our website to book online.",
+        "Booking an appointment is easy. You can either call our hospital's appointment desk or use our online appointment booking system to select a suitable date and time.",
+        "Yes, we provide online appointment booking options for your convenience. Visit our website and follow the instructions to book your appointment online.",
+        "While we encourage booking appointments in advance, we also accept walk-in patients. However, please note that wait times may vary for walk-in appointments."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "doctor",
+      "patterns": [
+        "Can you provide information about the doctors?",
+        "Tell me about the qualifications of the doctors",
+        "How can I find the right doctor for my condition?",
+        "Do you have specialists?"
+      ],
+      "responses": [
+        "Our hospital has a team of highly qualified and experienced doctors from various medical specialties.",
+        "Our doctors have extensive medical training and experience in their respective fields. They hold degrees, certifications, and memberships in professional medical associations.",
+        "To find the right doctor for your condition, you can either consult your primary care physician for a referral or visit our hospital's website to search for doctors by specialty.",
+        "Yes, we have specialists in various fields such as cardiology, orthopedics, neurology, pediatrics, and more. These specialists have advanced expertise in diagnosing and treating specific medical conditions."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "What services does the hospital provide?",
+        "Tell me about the medical services available",
+        "Do you have emergency services?",
+        "Are there specialized treatments available?"
+      ],
+      "responses": [
+        "Our hospital provides a wide range of medical services including general medical care, surgical procedures, diagnostic tests, preventive health screenings, and more.",
+        "We offer comprehensive medical services across various specialties such as cardiology, oncology, gastroenterology, dermatology, and many others.",
+        "Yes, we have emergency services available 24/7 to handle urgent medical cases. Our emergency department is equipped with state-of-the-art facilities and staffed by experienced medical professionals.",
+        "We provide specialized treatments for specific medical conditions such as cancer treatments, organ transplantations, fertility treatments, and advanced surgical procedures. Our specialists are trained to deliver high-quality care in these areas."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "visiting_hours",
+      "patterns": [
+        "What are the visiting hours?",
+        "When can I visit a patient?",
+        "Are there any restrictions on visiting?",
+        "Can I bring children to visit?"
+      ],
+      "responses": [
+        "Visiting hours are from [visiting hours].",
+        "Visitors are welcome during [visiting hours].",
+        "To ensure patient well-being, there may be restrictions on visiting. Please check with our front desk or nursing staff for more information.",
+        "Children may be allowed to visit but under adult supervision. Please inquire at the front desk for specific guidelines."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "parking",
+      "patterns": [
+        "Is there parking available?",
+        "Where can I park my vehicle?",
+        "Are there any parking fees?",
+        "Is there handicap parking?"
+      ],
+      "responses": [
+        "Yes, we have parking facilities for visitors.",
+        "Parking areas are located [parking location].",
+        "Parking fees may apply. Please check the signage or inquire at the parking booth for the current rates.",
+        "Handicap parking spaces are available near the entrance for individuals with disabilities."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "pharmacy",
+      "patterns": [
+        "Is there a pharmacy in the hospital?",
+        "Where is the hospital pharmacy located?",
+        "Do you offer prescription services?",
+        "Can I refill my medications at the hospital?"
+      ],
+      "responses": [
+        "Yes, we have a pharmacy located [pharmacy location].",
+        "The hospital pharmacy is situated [pharmacy location].",
+        "Our pharmacy provides prescription services for patients.",
+        "Medication refills can be done at the hospital pharmacy. Please bring your prescription or medication details for assistance."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "medical_records",
+      "patterns": [
+        "How can I access my medical records?",
+        "What is the process for obtaining medical records?",
+        "Are medical records available online?",
+        "Can I request a copy of my medical records?"
+      ],
+      "responses": [
+        "To access your medical records, please fill out a medical records request form available at the front desk.",
+        "Obtaining medical records requires completing a medical records request form. You can request a copy from the front desk or download it from our website.",
+        "At the moment, we do not provide online access to medical records. Please visit our hospital and complete the necessary procedures to obtain your records.",
+        "Yes, you can request a copy of your medical records. Please fill out a medical records request form and submit it to the front desk or medical records department."
+      ],
+      "context": ""
+    }
+  ]
+}
